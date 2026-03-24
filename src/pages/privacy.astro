@@ -1,51 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Privacy Policy for Booked Again</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/public/livelink/css/livelink.css"/>
-
-    <meta name="robots" content="noindex" />
-
-    <meta property="og:title" content="Privacy Policy for Booked Again - FreePrivacyPolicy.com" />
-    <meta property="og:image" content="https://www.freeprivacypolicy.com/public/images/meta_og_image_livelink.png" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="720" />
-    
-    <meta property="og:url" content="https://www.freeprivacypolicy.com/live/80dcb827-ba6f-4b89-b00c-980d4b15ad03" />
-    <meta property="og:site_name" content="FreePrivacyPolicy.com" />
-
-    <link rel="canonical" href="https://www.freeprivacypolicy.com/live/80dcb827-ba6f-4b89-b00c-980d4b15ad03" />
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMNQ8CKJG"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-QSMNQ8CKJG');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        h1 { border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .section { margin-bottom: 30px; }
-        a { color: #007AFF; text-decoration: none; }
-    </style>
-    
-</head>
-<body>
-<div class="page">
-
-    <div class="translations-content-container">
-        <div class="container">
-
-            
-            <div class="tab-content translations-content-item en visible" id="en">
-                <h1>Privacy Policy</h1>
+<Layout title="Privacy Policy for Booked Again" noindex={true} includeAnalytics={true}>
+  <h1>Privacy Policy</h1>
 <p>Last updated: January 09, 2026</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.</p>
@@ -193,82 +151,4 @@
 <ul>
 <li>By Email: <a href="mailto:rainforest.mind.software@gmail.com">rainforest.mind.software@gmail.com</a></li>
 </ul>
-            </div>
-            
-
-        </div>
-    </div>
-    
-    
-    <div class="footer">
-        <div class="container">
-          <p>Generated using <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a></p>
-        </div>
-    </div>
-    
-
-</div>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
-    const tabLinks = Array.from(document.querySelectorAll(".tab-link"));
-    const tabContents = document.querySelectorAll(".tab-content");
-
-    tabLinks.forEach(function(tabLink) {
-        tabLink.addEventListener("click", toggleTab);
-    });
-
-    let priorActiveTab = null;
-
-    function toggleTab(event) {
-        tabLinks.forEach(function(tabLink, index){
-            tabLink.classList.remove("active");
-            tabLink.classList.add("inactive");
-
-            tabContents[index].classList.remove("visible");
-            tabContents[index].classList.add("hidden");
-        });
-
-        if(priorActiveTab === this) {
-            this.classList.remove("active");
-            this.classList.add("inactive");
-
-            tabContents[tabLinks.indexOf(this)].classList.remove("visible");
-            tabContents[tabLinks.indexOf(this)].classList.add("hidden");
-
-            priorActiveTab = null;
-        } else {
-            this.classList.remove("inactive");
-            this.classList.add("active");
-
-            tabContents[tabLinks.indexOf(this)].classList.remove("hidden");
-            tabContents[tabLinks.indexOf(this)].classList.add("visible");
-
-            priorActiveTab = this;
-        }
-
-        if (priorActiveTab === null) {
-            this.classList.remove("inactive");
-            this.classList.add("active");
-
-            tabContents[tabLinks.indexOf(this)].classList.remove("hidden");
-            tabContents[tabLinks.indexOf(this)].classList.add("visible");
-        }
-
-        event.preventDefault();
-    }
-</script>
-
-<script defer data-domain="freeprivacypolicy-livelink--production" data-api="/plausible/event" src="/plausible/script.js"></script>
-
-<script type="text/javascript">
-    "use strict";
-    window.LCG_TRACKING_APPLICATION = "freeprivacypolicy-livelink";
-    window.LCG_TRACKING_ENVIRONMENT = "production";
-    window.LCG_TRACKING_EPOCH = "2020-e01";
-</script>
-
-
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"dd281d4ac6a447be928fcee1746ec801","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-</html>
+</Layout>
